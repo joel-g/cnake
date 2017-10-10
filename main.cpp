@@ -17,10 +17,33 @@ void Setup()
     fruitY = rand() % width;
     score = 0;
 }
+
 void Draw()
 {
+    system('clear'); // 'cls for windows
+    for (int i = 0; i < width; i++)
+        cout << "#";
+    cout << endl;
 
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width + 2; j++)
+        {
+            if (j == 0)
+                cout << "#";
+            
+                cout << " ";
+            
+            if (j == width - 1)
+                cout << "#";
+        }
+        cout << endl;
+    }
+    for (int i = 0; i < width + 2; i++)
+        cout << "#";
+    cout << endl;
 }
+
 void Input()
 {
 
