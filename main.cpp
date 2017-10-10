@@ -9,7 +9,7 @@ eDirection dir;
 
 void Setup()
 {
-    gameOver = false
+    gameOver = false;
     dir = STOP;
     x = width / 2;
     y = height / 2;
@@ -20,7 +20,7 @@ void Setup()
 
 void Draw()
 {
-    system('clear'); // 'cls for windows
+    system("clear"); // 'cls for windows
     for (int i = 0; i < width; i++)
         cout << "#";
     cout << endl;
